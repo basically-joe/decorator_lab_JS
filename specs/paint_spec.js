@@ -1,2 +1,2 @@
-const assert = require("assert");
-const Paint = require("../paint");
+// const assert = require("assert");
+// const Paint = require("../paint");
