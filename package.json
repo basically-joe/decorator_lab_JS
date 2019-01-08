@@ -1,0 +1,22 @@
+{
+  "name": "decorator",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "test": "mocha specs"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/basically-joe/decorator_lab_JS.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/basically-joe/decorator_lab_JS/issues"
+  },
+  "homepage": "https://github.com/basically-joe/decorator_lab_JS#readme",
+  "devDependencies": {
+    "mocha": "^5.2.0"
+  }
+}
