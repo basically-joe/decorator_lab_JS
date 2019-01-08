@@ -2,27 +2,26 @@ const assert = require("assert");
 const Decorator = require("../models/decorator");
 
 
+describe("Decorator", function() {
 
+  beforeEach(function() {
+    decorator = new Decorator(0);
+  });
 
+  it("It should start with empty paint stock", function() {
+    const actual = decorator.stock;
+    assert.strictEqual(actual, 0);
+  });
 
-//   beforeEach(function() {
-//     room = new Room (10);
-//   });
-//
-//   it("should have and area in squared meters", function() {
-//     const actual = room.area;
-//     assert.strictEqual(actual, 10);
-//   });
-//
-//   it("should start unpainted", function() {
-//     const actual = room.painted;
-//     assert.strictEqual(actual, false)
-//   });
-//
-//   it("should be able to be painted", function() {
-//     const actual = room.bePainted();
-//     assert.strictEqual(actual, true)
-//   });
-//
-//
-// });
+  it("It should be able to add a can of paint to stock", function() {
+    const actual = decorator.addStock(10);
+    assert.strictEqual(actual, 10);
+  });
+
+  it("It should be able to calculate total litres of paint in stock", function () {
+    decorator.addStock()
+    const actual = decorator.stockCount();
+    assert.strictEqual(actual, 10)
+  })
+
+});
